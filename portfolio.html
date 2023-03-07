@@ -1,12 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Mon portfolio</title>
+    <style>
+          body {
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+    }
+
+    nav ul {
+      display: flex;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li {
+      margin-right: 20px;
+    }
+
+    nav ul li:last-child {
+      margin-right: 0;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline;
+    }
+    nav li a:hover {
+      background-color: #333;
+      color: #fff;
+      }
+      h1{
+          color: white;
+          text-transform: capitalize;
+          text-align: center;
+        }
+
+        .glyphicon-pencil{
+          font-size: 25px;
+          color: rgb(204, 122, 122);
+          float: left;
+          margin-top: 20px;
+        }
+
+        .p-md-5{
+          margin-top: 80px;
+          box-shadow: -1px 1px 60px 10px black;
+          background-color: rgba(0, 0, 0, 0.1);
+        }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 >Mon portfolio</h1>
+      <nav>
+        <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#travaux">Mes travaux</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="a-propos" align="center">
+        <h2>À propos de moi</h2>
+        <p >Je suis un développeur web passionné par les technologies de pointe. 
+            J'ai travaillé sur de nombreux projets passionnants au cours des dernières années.</p>
+      </section>
+      <section id="travaux" align="center">
+        <h2>Mes travaux</h2>
+        <ul>
+          <li>
+            <h3>Projet 1</h3>
+            <p>Une description de mon premier projet.</p>
+            <img src="https://img.freepik.com/photos-gratuite/concept-controle-qualite-standard-m_23-2150041859.jpg?w=996&t=st=1678216218~exp=1678216818~hmac=e5f0458469e825c2679f31f23ce694edc678c893b8ad3ee4b3da2903c3026cb3" alt="">
+          </li>
+          <li>
+            <h3>Projet 2</h3>
+            <p>Une description de mon deuxième projet.</p>
+            <img src="https://img.freepik.com/photos-gratuite/concept-collage-controle-qualite-standard_23-2149595832.jpg?w=996&t=st=1678217752~exp=1678218352~hmac=8f13dd867f67b453e15c67ccbbcb9701f44e7c86ac9a47fa468e43ba7010644f" alt="">
+          </li>
+        </ul>
+      </section>
+        <div class="col-md-6 p-md-5" id="contact" >
+          <div class="row">
+            <div class="col-md-6">
+              <h1 style="color: #0b0a0a;">CONTACTS</h1>
+          </div>
+          <div align="center"><span class="glyphicon glyphicon-pencil"></span></div>
+          </div>
+        <form method="post" action="#" align="center">
+            <div class="form-group">
+              <label for="label col-md-2 control-label" style="color: #0b0909;" >Votre Adresse e-mail</label>
+              <div class="col-md-10">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="label col-md-2 control-label" style="color: #0b0909;">Votre message</label>
+              <div class="col-md-10">
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+              </div>
+            </div>
+            <div class="m-1" align="center">
+              <input type="submit" class="btn btn-outline-primary" value="Envoyer">
+            </div>
+        </form>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
+
